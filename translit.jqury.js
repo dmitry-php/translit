@@ -1,7 +1,8 @@
-/*
- * jQuery translit v 0.0.1
+/**
+ * jQuery translit v0.0.1
  *
- * Copyright 2016, Dmitriy Troyan
+ * Copyright 2016 Dmitriy Troyan
+ * Released under the MIT license
  */
 
 (function ($) {
@@ -96,7 +97,7 @@
             var self = $(this);
 
             if (!self.length) {
-                self = $('<div>').text(o.string);
+                return;
             }
 
             return self.each(function () {
